@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Samim;
+    src: url(./fonts/samim.ttf);
+  }
+* {
+    font-family: Samim;
+  }
+.products{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+
+  }
+body{
+    background-color:#fafafa ;
+    direction: rtl;
+}
+.product{
+    background-color: #1a1a1a;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+a{
+    background-color: #f02e08;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 12px;
+    min-width: 100px;
+    text-align: center;
+}
+.product img{
+    width: 100px;
+    max-width: 100%;
+}
+.product h2{
+    margin: 20px 0px 20px 0px;
+    color: #fafafa;
+    font-size: 18px;
+}
+a:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width:650px){
+    .product{
+        width: 43%;
+    }
+}
+@media screen and (min-width:850px){
+    .product{
+        width: 28%;
+    }
+}
+@media screen and (min-width:1200px){
+    .product{
+        width: 21%;
+    }
+}
